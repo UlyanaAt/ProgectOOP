@@ -110,10 +110,10 @@ namespace ProgectOOP {
 				static_cast<System::Byte>(0)));
 			this->label2->Location = System::Drawing::Point(1272, 850);
 			this->label2->Name = L"label2";
-			this->label2->Padding = System::Windows::Forms::Padding(230, 0, 230, 0);
-			this->label2->Size = System::Drawing::Size(592, 79);
+			this->label2->Padding = System::Windows::Forms::Padding(185, 0, 185, 0);
+			this->label2->Size = System::Drawing::Size(593, 79);
 			this->label2->TabIndex = 3;
-			this->label2->Text = L"Bot";
+			this->label2->Text = L"Enemy";
 			// 
 			// pictureBox2
 			// 
@@ -185,7 +185,7 @@ namespace ProgectOOP {
 			this->UnderwearMsg2->ForeColor = System::Drawing::Color::Red;
 			this->UnderwearMsg2->Location = System::Drawing::Point(1280, 16);
 			this->UnderwearMsg2->Name = L"UnderwearMsg2";
-			this->UnderwearMsg2->Size = System::Drawing::Size(0, 29);
+			this->UnderwearMsg2->Size = System::Drawing::Size(0, 26);
 			this->UnderwearMsg2->TabIndex = 8;
 			// 
 			// Total1
