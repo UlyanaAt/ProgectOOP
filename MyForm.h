@@ -148,7 +148,7 @@ namespace ProgectOOP {
 			this->butCA->Name = L"butCA";
 			this->butCA->Size = System::Drawing::Size(562, 89);
 			this->butCA->TabIndex = 5;
-			this->butCA->Text = L"Create Assasin";
+			this->butCA->Text = L"Create Assassin";
 			this->butCA->UseVisualStyleBackColor = false;
 			this->butCA->Click += gcnew System::EventHandler(this, &MyForm::butCA_Click);
 			// 
