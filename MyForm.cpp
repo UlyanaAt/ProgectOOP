@@ -4,7 +4,7 @@
 #include "CharacterDirector.h"
 #include "MagicianBuilder.h"
 #include "Director.h"
-#include "AssasinBuilder.h"
+#include "AssassinBuilder.h"
 #include "TankBuilder.h"
 
 #include "Suplimental.h"
@@ -59,8 +59,8 @@ Character* ProgectOOP::MyForm::Enemy()
 	}
 	else if (RandE > 33 && RandE <= 66)
 	{
-		AssasinBuilder AssasinBuildEnemy;
-		Character* enemy = CharacterDirEnemy.CreateCharacter(AssasinBuildEnemy, dirEnemy);
+		AssassinBuilder AssassinBuildEnemy;
+		Character* enemy = CharacterDirEnemy.CreateCharacter(AssassinBuildEnemy, dirEnemy);
 		EFC = enemy->FullCharacteristics;
 		Total2->Text = "Enemy total combat strenght: " + EFC.ToString();
 
@@ -143,9 +143,9 @@ System::Void ProgectOOP::MyForm::butCM_Click(System::Object^ sender, System::Eve
 System::Void ProgectOOP::MyForm::butCA_Click(System::Object^ sender, System::EventArgs^ e)
 {
 	CharacterDirector CharacterDir;
-	AssasinBuilder AssasinBuild;
+	AssassinBuilder AssassinBuild;
 	Director dir;
-	Character* character = CharacterDir.CreateCharacter(AssasinBuild, dir);
+	Character* character = CharacterDir.CreateCharacter(AssassinBuild, dir);
 	FC = character->FullCharacteristics;
 
 	if (character->isUnderwear)

@@ -1,7 +1,7 @@
 #pragma once
 #include "CharacterBuilder.h"
 
-class AssasinBuilder : public CharacterBuilder
+class AssassinBuilder : public CharacterBuilder
 {
 	void CreateCharacter();
 	void SetHealth();

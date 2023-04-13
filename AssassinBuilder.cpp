@@ -1,37 +1,37 @@
-#include "AssasinBuilder.h"
+#include "AssassinBuilder.h"
 
-void AssasinBuilder::CreateCharacter()
+void AssassinBuilder::CreateCharacter()
 {
 	character = new Character;
 }
 
-void AssasinBuilder::SetHealth()
+void AssassinBuilder::SetHealth()
 {
 	character->Health = Suplimental::RandZeroToHundr();
 }
 
-void AssasinBuilder::SetStrenght()
+void AssassinBuilder::SetStrenght()
 {
 	character->Strenght = Suplimental::RandZeroToHundr();
 }
 
-void AssasinBuilder::SetLuck()
+void AssassinBuilder::SetLuck()
 {
 	character->Luck = Suplimental::RandZeroToHundr();
 }
 
-void AssasinBuilder::AddArmor(Director& director)
+void AssassinBuilder::AddArmor(Director& director)
 {
 	ArmorBuilder AssasinArmorBuilder;
 	character->ArmorOfCharacter = director.createArmor(AssasinArmorBuilder);
 }
 
-void AssasinBuilder::AddWeapon()
+void AssassinBuilder::AddWeapon()
 {
 	character->Weapon = Suplimental::RandZeroToHundr();
 }
 
-void AssasinBuilder::SetFullCharacteristics()
+void AssassinBuilder::SetFullCharacteristics()
 {
 	character->FullCharacteristics = character->Health + character->Strenght + character->Luck + character->Weapon + character->ArmorOfCharacter->GetTotalArmor();
 }
